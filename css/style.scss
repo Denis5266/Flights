@@ -1,0 +1,105 @@
+$color-red: #ff0000;
+$color-grey: #e6e6e6;
+$color-grey-dark: #9a9a9a;
+$sans-pro-regular: 400;
+$sans-pro-bold: 600;
+$sans-pro-black: 900;
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Black.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Bold.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../fonts/SourceSansPro-Regular.woff2') format('woff2'),
+        url('../fonts/SourceSansPro-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif , 'Source Sans Pro' ;
+    font-weight: $sans-pro-regular;
+}
+
+.navbar-brand {
+    flex-grow: 3;
+    font-weight: $sans-pro-bold;
+}
+
+.nav-link {
+    &:hover {
+        color: $color-red;
+    }
+}
+
+.airline_section {
+    padding-top: 62px;
+}
+
+.airline_section .top, .main {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: $sans-pro-black;
+        & li {
+            display: flex;
+            flex-grow: 1;
+        }
+        & li:first-child {
+            flex-grow: 3;
+        }
+        & li:last-child {
+            flex-grow: 2;
+        }
+}
+
+.airline_section .main {
+    padding: 52px 0;
+    border-top: 1px solid $color-grey;
+    font-weight: $sans-pro-regular;
+    & img {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 5px 30px 0 0;
+    }
+    & .fr {
+        height: 11px;
+        margin-top: 20px;
+    }
+    & li {
+        text-align: center;
+        flex-direction: column;
+    }
+    & .btn {
+        width: 120px;
+    }
+    & span {
+        color: $color-grey-dark;
+        display: block;
+    }
+}
+
+.airline_section .main:first-child {
+    margin-top: 40px;
+}
+
+.airline_section .main:last-child {
+    border-bottom: 1px solid $color-grey;
+}
