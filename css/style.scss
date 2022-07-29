@@ -52,6 +52,9 @@ body {
     @media (max-width: 768px) {
         padding: 0;
     }
+    @media (max-width: 992px) {
+        padding: 0;
+    }
 }
 
 .airline_section .top, .airline_section .main {
@@ -70,6 +73,9 @@ body {
             flex-basis: 15%;
         }
     @media (max-width: 768px) {
+        display: none;
+    }
+    @media (max-width: 992px) {
         display: none;
     }
 }
@@ -100,6 +106,30 @@ body {
     span {
         color: $color-grey-dark;
         display: block;
+    }    
+    @media (max-width: 992px) {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid $color-grey;
+        padding: 0;
+        li {
+            flex-basis: 30%;
+            justify-content: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+        li:first-child {
+            flex-basis: 30%;
+        }
+        li:last-child {
+            flex-basis: 30%;
+        }
+        img {
+            margin: 0;
+        }
+        .btn {
+            width: 90px;
+        }
     }
     @media (max-width: 768px) {
         display: flex;
@@ -111,6 +141,9 @@ body {
             justify-content: center;
             margin-top: 8px;
             margin-bottom: 8px;
+        }        
+        li:first-child {
+            flex-basis: 50%;
         }
         li:last-child {
             flex-basis: 50%;
@@ -122,6 +155,8 @@ body {
             width: 90px;
         }
     }
+
+
 }
 
 .airline_section .main:first-child {
