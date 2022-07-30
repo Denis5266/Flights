@@ -1,0 +1,159 @@
+.navbar-brand {
+    font-weight: $sans-pro-bold;
+}
+
+.nav-link {
+    &:hover {
+        color: $color-red;
+    }
+}
+
+.airline_section {
+    padding-top: 62px;
+    @media (max-width: 991px) {
+        padding: 0;
+    }
+}
+
+.airline_section .top, .airline_section .main {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    font-weight: $sans-pro-black;
+        li {
+            display: flex;
+            flex-basis: 25%;
+            &:first-child {
+                flex-basis: 45%;
+            }
+            &:last-child {
+                flex-basis: 15%;
+            }
+        }
+    @media (max-width: 991px) {
+        display: none;
+    }
+}
+
+.airline_section .main {
+    padding: 52px 0;
+    border-top: 1px solid $color-grey;
+    font-weight: $sans-pro-regular;
+    &:first-child {
+        margin-top: 40px;
+    }
+    &:last-child {
+        border-bottom: 1px solid $color-grey;
+    }
+    li:last-child {
+        flex-basis: 0%;
+    }
+    img {
+        display: block;
+        width: 36px;
+        height: 36px;
+        margin: 5px 30px 0 0;
+    }
+    .fr {
+        height: 11px;
+        margin-top: 20px;
+    }
+    li {
+        text-align: center;
+    }
+    .btn {
+        width: 120px;
+    }
+    span {
+        color: $color-grey-dark;
+        display: block;
+    }    
+    @media (max-width: 991px) {
+        display: flex;
+        flex-wrap: wrap;
+        border: 1px solid $color-grey;
+        padding: 0;
+        li {
+            flex-basis: 30%;
+            justify-content: center;
+            margin-top: 8px;
+            margin-bottom: 8px;
+            &:first-child {
+                flex-basis: 30%;
+            }
+            &:last-child {
+                flex-basis: 30%;
+            }
+        }
+        img {
+            margin: 0;
+        }
+        .btn {
+            width: 90px;
+        }
+    }
+    @media (max-width: 767px) {
+        li {
+            flex-basis: 50%;
+            &:first-child {
+                flex-basis: 50%;
+            }
+            &:last-child {
+                flex-basis: 50%;
+            }
+        }
+    }
+}
+.footer-nav-section {
+    display: flex;
+    flex-wrap: wrap;
+    nav {
+        flex-basis: 100%;
+    }
+    @media (min-width: 767px) {
+        nav {
+            flex-basis: 50%;
+        }
+    }
+    @media (min-width: 1199px) {
+        nav {
+            flex-basis: auto;
+        }
+        &.footer-nav-section {
+            justify-content: space-between;
+        }
+    }
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    li {
+        margin-bottom: 8px;
+        &:first-child {
+        margin-bottom: 20px;
+        font-weight: $sans-pro-bold;
+        font-size: 30px;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: $color-grey-dark;
+        font-size: 18px;
+        &:hover {
+            color: $color-red;
+        }
+    }
+    .email {
+        color: $color-red;
+    }
+    .text-for-email {
+        color: $color-grey-dark;
+        font-size: 18px;
+    }
+    @media (min-width: 767px) {
+        align-items: flex-start;
+    }
+}
