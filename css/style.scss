@@ -49,10 +49,7 @@ body {
 
 .airline_section {
     padding-top: 62px;
-    @media (max-width: 768px) {
-        padding: 0;
-    }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         padding: 0;
     }
 }
@@ -72,10 +69,7 @@ body {
         li:last-child {
             flex-basis: 15%;
         }
-    @media (max-width: 768px) {
-        display: none;
-    }
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         display: none;
     }
 }
@@ -84,6 +78,12 @@ body {
     padding: 52px 0;
     border-top: 1px solid $color-grey;
     font-weight: $sans-pro-regular;
+    &:first-child {
+        margin-top: 40px;
+    }
+    &:last-child {
+        border-bottom: 1px solid $color-grey;
+    }
     li:last-child {
         flex-basis: 0%;
     }
@@ -107,7 +107,7 @@ body {
         color: $color-grey-dark;
         display: block;
     }    
-    @media (max-width: 992px) {
+    @media (max-width: 991px) {
         display: flex;
         flex-wrap: wrap;
         border: 1px solid $color-grey;
@@ -131,16 +131,9 @@ body {
             width: 90px;
         }
     }
-    @media (max-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        border: 1px solid $color-grey;
-        padding: 0;
+    @media (max-width: 767px) {
         li {
             flex-basis: 50%;
-            justify-content: center;
-            margin-top: 8px;
-            margin-bottom: 8px;
         }        
         li:first-child {
             flex-basis: 50%;
@@ -148,21 +141,5 @@ body {
         li:last-child {
             flex-basis: 50%;
         }
-        img {
-            margin: 0;
-        }
-        .btn {
-            width: 90px;
-        }
     }
-
-
-}
-
-.airline_section .main:first-child {
-    margin-top: 40px;
-}
-
-.airline_section .main:last-child {
-    border-bottom: 1px solid $color-grey;
 }
