@@ -131,8 +131,6 @@ footer {
     }
 }
 
-
-
 footer ul {
     list-style: none;
     text-align: center;
@@ -161,5 +159,44 @@ footer ul {
     }
     @media (min-width: 767px) {
         text-align: start;
+    }
+}
+
+.hotels-section {
+    padding-top: 141px;
+    .row>* {
+        padding: calc(var(--bs-gutter-x) * .5);
+    }
+}
+
+.hotel-card {
+    border: 1px solid $color-grey;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+        width: 100%;
+    }
+    h2 {
+        font-size: 18px;
+        font-weight: 600;
+        margin: 26px 0 0 16px;
+    }
+    P {
+        margin: 26px 16px 0;
+        font-size: 16px;
+        color: $color-grey-dark;
+        &:nth-child(even) {
+            margin-right: 42px;
+        }
+    }
+    span {
+        float: right;
+    }
+    button {
+        width: 120px;
+        margin: 26px 0 16px 16px;
+        justify-content: flex-end;
     }
 }
