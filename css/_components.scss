@@ -174,29 +174,25 @@ footer ul {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     img {
         width: 100%;
     }
-    h2 {
-        font-size: 18px;
-        font-weight: 600;
-        margin: 26px 0 0 16px;
-    }
-    P {
-        margin: 26px 16px 0;
-        font-size: 16px;
-        color: $color-grey-dark;
-        &:nth-child(even) {
-            margin-right: 42px;
-        }
-    }
-    span {
-        float: right;
-    }
     button {
         width: 120px;
-        margin: 26px 0 16px 16px;
-        justify-content: flex-end;
+        margin: auto 0 20px 20px;
+    }
+    .hotel-card-text {
+        padding: 20px;
+        h2 {
+            font-size: 18px;
+            font-weight: 600;
+        }
+        P {
+            font-size: 16px;
+            color: $color-grey-dark;
+        }
+        span {
+            float: right;
+        }
     }
 }
